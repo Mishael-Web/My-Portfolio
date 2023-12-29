@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/android-chrome-192x192.png">
+    <script src="https://kit.fontawesome.com/a99f72f905.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>M</span>ISH<span>W</span>EB</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hello, I'm <br> <span>Mishael</span> Acharah</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Hi There!</h1>
+                    <p class="paragraph">
+                        I am a Front-end Web Developer, and a certified Virtual Assistant with a strong drive for
+                        building responsive user friendly websites, and a passion for growth and self-develpment.
+                        I enjoy working in a diverse team of creatives because I love learning and I believe in the 
+                        power of collabortion and networking. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education/achievements')">Education/Achievement</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Tailwind</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                            <li>Proficient with Google Workspace.</li>
+                            <li>Excellent writing & research skills.</li>
+                            <li>Attention to details.</li>
+                            <li>Resourceful</li>
+                            <li>Time Management.</li>
+                            <li>Multi-tasking.</li>
+                            <li>Problem solving.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education/achievements">
+                        <ul>
+                            <li><span>2023</span><br>Completed the Javascript Training with Codevixens</li>
+                            <li><span>2022</span><br>Completed the Frontend Web Development Training with Africa Agility</li>
+                            <li><span>2022</span><br>Completed the ALX Virtual Assistant Training Program with Honors</li>
+                            <li><span>2022</span><br>Accelerated Jobberman Soft Skills Training (Certificate of Achievement)</li>
+                            <li><span>2019</span><br>BLS (Bachelor of Library & Information Science) from Imo State University Owerri, Nigeria</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I build beautiful responsive websites & landing pages. A responsive design makes your website accessible
+                        to users regardless of their device.
+                    </p>
+                    <a href="#about">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Virtual Assistant</h2>
+                    <p>I assist with tasks and projects, such as data entry, 
+                        project management, email/inbox management, internet research, editing/proofreading, 
+                        transcribing, and many more.</p>
+                    <a href="#about">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pexels-lisa-fotios-16129877.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website designed with the use of
+                            HTML, CSS, and Javascript.
+                        </p>
+                        <a href="https://mishael-web.github.io/Personal-Portfolio/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/pexels-karolina-grabowska-5632402.jpg">
+                    <div class="layer">
+                        <h3>Online Store Website</h3>
+                        <p>An online Fashion web store designed with Ecwid.</p>
+                        <a href="https://miadesigns.company.site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/foto 2.png">
+                    <div class="layer">
+                        <h3>Dog Kennel Website</h3>
+                        <p>A dog kennel website designed with the use of 
+                            HTML, CSS, and Javascript.
+                        </p>
+                        <a href="https://royalbee-kennels.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn2">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mishaelacharah@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>07066881182</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/misahelacharah"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Mish_aell?t=b0TrkfbJ8oXRjKDwyEwexw&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=lr9sq511257g&utm_content=q3l6qrn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Mishael Acharah_CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/d6abf9eecb2565e33c809fdd13a14534" method="POST">
+                    
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 by Mishael Acharah. All rights reserved</p>
+        
+        </div>
+       
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
